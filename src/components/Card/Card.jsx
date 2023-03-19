@@ -16,10 +16,8 @@ const Card = ({ movie }) => {
     return (
         <>
             {isLoading ? (
-                <div className="Cards">
-                    <SkeletonTheme color="#202020" highlightColor="#444">
-                        <Skeleton height={300} duration={2} />
-                    </SkeletonTheme>
+                <div className="Cards CardLoading">
+                    <Skeleton height={300} duration={2} />
                 </div>
             ) : (
                 <Link

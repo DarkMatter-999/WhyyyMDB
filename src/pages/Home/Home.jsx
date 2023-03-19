@@ -4,7 +4,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import Card from "../../components/Card/Card";
 
 const Home = () => {
     const [popular, setPopular] = useState([]);
@@ -60,12 +59,6 @@ const Home = () => {
                         </Link>
                     ))}
                 </Carousel>
-            </div>
-            <div style={{ display: "flex", flexDirection: "row" }}>
-                <Card movie={popular[0]} />
-                <Card movie={popular[1]} />
-                <Card movie={popular[2]} />
-                <Card movie={popular[3]} />
             </div>
         </div>
     );

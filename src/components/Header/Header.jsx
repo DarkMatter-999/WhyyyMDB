@@ -9,13 +9,13 @@ const Header = () => {
                 <Link to="/" className="headerIcon">
                     Home
                 </Link>
-                <Link to="/movie/popular" className="headerIcon">
+                <Link to="/movies/popular" className="headerIcon">
                     Popular
                 </Link>
-                <Link to="/movie/toprated" className="headerIcon">
+                <Link to="/movies/top_rated" className="headerIcon">
                     Top Rated
                 </Link>
-                <Link to="/movie/upcoming" className="headerIcon">
+                <Link to="/movies/upcoming" className="headerIcon">
                     Upcoming
                 </Link>
             </div>

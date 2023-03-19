@@ -12,6 +12,20 @@
     border: 1px solid rgb(99, 99, 99);
 }
 
+.CardLoading {
+    animation: skeleton-loading 0.5s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 11%, 32%);
+    }
+
+    100% {
+        background-color: hsl(0, 0%, 71%);
+    }
+}
+
 .Cards:hover {
     transform: scale(1.2);
     z-index: 1000;
