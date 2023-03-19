@@ -35,7 +35,7 @@ const MovieList = () => {
             </div>
             <div className="CardList">
                 {movieList.map((movie, id) => (
-                    <Card movie={movie} id={id} />
+                    <Card movie={movie} key={id} />
                 ))}
             </div>
         </div>
