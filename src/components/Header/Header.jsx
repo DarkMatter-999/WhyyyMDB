@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Search from "../Search/Search";
 import "./Header.css";
 
 const Header = () => {
     return (
         <div className="header">
-            <div className="header-left">
+            <div className="headerLeft">
                 <Link to="/" className="headerIcon">
                     Home
                 </Link>
@@ -18,6 +19,9 @@ const Header = () => {
                 <Link to="/movies/upcoming" className="headerIcon">
                     Upcoming
                 </Link>
+            </div>
+            <div className="headerRight">
+                <Search />
             </div>
         </div>
     );

@@ -13,6 +13,10 @@ const Card = ({ movie }) => {
         }, 1500);
     }, []);
 
+    const loaded = () => {
+        setIsLoading(false);
+    };
+
     return (
         <>
             {isLoading ? (
@@ -30,6 +34,7 @@ const Card = ({ movie }) => {
                             src={`https://image.tmdb.org/t/p/original${
                                 movie ? movie.poster_path : ""
                             }`}
+                            onLoad={loaded}
                         />
                         <div className="cardsOverlay">
                             <div className="cardTitle">
